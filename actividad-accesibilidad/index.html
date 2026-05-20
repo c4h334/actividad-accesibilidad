@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica de Accesibilidad Frontend</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="falso-header">
+      <div class="logo">MiSitioInaccesible</div>
+      <div class="falso-nav">
+        <div class="enlace-bloqueado" onclick="alert('Inicio')">Inicio</div>
+        <div class="enlace-bloqueado" onclick="alert('Servicios')">
+          Servicios
+        </div>
+        <div class="enlace-bloqueado" onclick="alert('Contacto')">Contacto</div>
+      </div>
+    </div>
+
+    <div class="contenedor-principal">
+      <h3>Sección de Registro de Usuario</h3>
+
+      <div class="banner-contenedor">
+        <img
+          src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=500"
+          class="imagen-banner"
+        />
+      </div>
+
+      <div class="formulario-seccion">
+        <p class="instrucciones-complejas">
+          Complete el siguiente formulario ingresando de forma obligatoria todos
+          los datos alfanuméricos solicitados por el sistema de autenticación
+          centralizado.
+        </p>
+
+        <div class="campo-grupo">
+          <span class="etiqueta-visual">Nombre de usuario:</span>
+          <input type="text" placeholder="Ej: user123" />
+        </div>
+
+        <div class="campo-grupo">
+          <span class="etiqueta-visual">Contraseña:</span>
+          <input type="password" />
+        </div>
+
+        <div class="boton-contenedor">
+          <span class="falso-boton-enviar" onclick="alert('Formulario enviado')"
+            >-></span
+          >
+        </div>
+      </div>
+
+      <div class="seccion-notificaciones">
+        <p>Estado del Servidor:</p>
+        <div
+          class="alerta-color-unico"
+          onclick="alert('Error crítico de conexión')"
+        ></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
+      async
+    ></script>
+  </body>
+</html>

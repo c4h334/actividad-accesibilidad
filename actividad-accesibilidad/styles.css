@@ -1,0 +1,106 @@
+/* Estilos Generales con bajo contraste */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #e0e0e0; /* Error: Texto gris muy claro sobre fondo blanco (Contraste insuficiente) */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado sin semántica */
+.falso-header {
+    background-color: #f5f5f5;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    color: #ffd700; /* Error: Amarillo sobre fondo gris claro (Contraste pésimo) */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.falso-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.enlace-bloqueado {
+    color: #b0b0b0;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Contenedor e interfaz sobrecargada o desordenada */
+.contenedor-principal {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+h3 {
+    color: #c0c0c0;
+    font-size: 14px; /* Error: Tamaño de letra excesivamente pequeño para un encabezado */
+}
+
+.instrucciones-complejas {
+    font-size: 11px; /* Error: Texto demasiado pequeño y lenguaje complejo */
+    line-height: 1.1;
+}
+
+/* Formulario con malas prácticas */
+.campo-grupo {
+    margin-bottom: 12px;
+}
+
+.etiqueta-visual {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 4px;
+    color: #cccccc;
+}
+
+input {
+    border: 1px solid #eeeeee;
+    padding: 5px;
+    background-color: #fafafa;
+    color: #d3d3d3;
+}
+
+/* Error: Eliminación completa del contorno de enfoque (Focus outline) */
+input:focus {
+    outline: none; 
+}
+
+/* Error: Elemento interactivo extremadamente pequeño y sin padding */
+.falso-boton-enviar {
+    background-color: #0000ff;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 2px 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Error: Botón circular rojo indicador de error sin mensaje adicional */
+.alerta-color-unico {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.banner-contenedor {
+    margin: 15px 0;
+}
+
+.imagen-banner {
+    width: 100%;
+    height: auto;
+    filter: grayscale(80%); /* Dificulta aún más la visualización */
+}
