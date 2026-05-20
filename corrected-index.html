@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Accesibilidad Frontend - Versión Accesible</title>
+    <link rel="stylesheet" href="corrected-styles.css">
+</head>
+<body>
+
+    <header class="header-accesible">
+        <div class="logo">MiSitioAccesible</div>
+        <nav class="nav-accesible" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <h1>Desarrollo Frontend Inclusivo</h1>
+        
+        <section class="seccion-registro">
+            <h2>Sección de Registro de Usuario</h2>
+            
+            <div class="banner-contenedor">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=500" 
+                     alt="Equipo de desarrolladores colaborando en el diseño de una interfaz digital inclusiva" 
+                     class="imagen-banner">
+            </div>
+
+            <form class="formulario-seccion">
+                <p class="instrucciones-claras">Por favor, complete los siguientes campos para crear su cuenta. Todos los datos son obligatorios.</p>
+                
+                <div class="campo-grupo">
+                    <label for="usuario">Nombre de usuario:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ej: user123" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+
+                <div class="boton-contenedor">
+                    <button type="submit" class="boton-enviar">Enviar registro</button>
+                </div>
+            </form>
+
+            <section class="seccion-notificaciones" aria-live="polite">
+                <h2>Estado del Servidor</h2>
+                <div class="alerta-accesible">
+                    <span class="icono-alerta" aria-hidden="true">⚠️</span>
+                    <span class="texto-alerta">Error de conexión: No se pudo establecer comunicación con el servidor central. Intente más tarde.</span>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js" async></script>
+</body>
+</html>

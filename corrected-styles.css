@@ -1,0 +1,141 @@
+/* Estilos con alto contraste y tipografía legible */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222; /* Texto oscuro sobre fondo claro para contraste óptimo */
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.header-accesible {
+    background-color: #1a1a1a;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff; /* Máximo contraste sobre el fondo oscuro del encabezado */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-accesible ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-accesible a {
+    color: #ffffff;
+    text-decoration: underline; /* Mantiene la distinción visual de un enlace */
+    font-size: 16px;
+}
+
+.nav-accesible a:hover, 
+.nav-accesible a:focus {
+    color: #00ffcc;
+}
+
+.contenedor-principal {
+    padding: 30px 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 28px;
+    color: #1a1a1a;
+}
+
+h2 {
+    color: #333333;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.instrucciones-claras {
+    font-size: 16px;
+    color: #444444;
+}
+
+.campo-grupo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+input {
+    border: 2px solid #555555;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+/* Conservación e intensificación del indicador de enfoque (Focus Outline) */
+input:focus, 
+button:focus, 
+a:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 3px;
+}
+
+/* Botón que cumple con las dimensiones mínimas de área interactiva (44x44px) */
+.boton-enviar {
+    background-color: #0056b3;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    min-height: 48px;
+    display: inline-block;
+}
+
+.boton-enviar:hover {
+    background-color: #004085;
+}
+
+/* Alerta accesible mediante el uso combinado de colores de alto contraste e iconos */
+.alerta-accesible {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #f8d7da;
+    color: #721c24; /* Contraste de texto riguroso para lectura clara */
+    padding: 15px;
+    border-left: 5px solid #dc3545;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.texto-alerta {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.banner-contenedor {
+    margin: 20px 0;
+}
+
+.imagen-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
